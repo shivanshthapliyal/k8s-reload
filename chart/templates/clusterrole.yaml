@@ -1,0 +1,14 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: {{ include "k8s-reload-controller.fullname" . }}
+rules:
+  - verbs:
+      - '*'
+    apiGroups:
+      - ''
+    resources:
+      - pods
+      - events
+      - configmaps
+      - deployments

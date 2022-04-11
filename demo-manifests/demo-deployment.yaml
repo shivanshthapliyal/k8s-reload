@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-frontend-app
+  labels:
+    app: demo-frontend-app
+spec:
+  selector:
+    matchLabels:
+      app: demo-frontend-app
+  template:
+    metadata:
+      labels:
+        app: demo-frontend-app
+    spec:
+      containers:
+      - name: demo-frontend-app
+        image: demo-frontend-app:v1
+        imagePullPolicy: IfNotPresent
+        volumeMounts:
+        - name: config-vol
+          mountPath: /config
+      volumes:
+      - name: config-vol
+        configMap:
+          name: demo-frontend-app-config
+
