@@ -39,4 +39,4 @@ Now, try modifying the configmap and see the controller automatically recreate t
 
 
 ## Usecases
-One usecase is while using [secrets-store-csi-driver-provider-aws](https://github.com/aws/secrets-store-csi-driver-provider-aws), if you somehow changed the ssm, the pods/ deployments don't reload on their own and need to be deleted manually.    
+One usecase is while using [secrets-store-csi-driver-provider-aws](https://github.com/aws/secrets-store-csi-driver-provider-aws), when you change the parameter or secret in Parameter Store or Secret Manager, the configmap changes in the env but the pods/ deployments don't reload on their own and need to be deleted manually.    
