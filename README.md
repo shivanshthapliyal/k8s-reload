@@ -1,5 +1,5 @@
 # k8s-reload
-Custom Kubernetes Controller to reload pods automatically if configmaps are changed/ updated.
+Custom Kubernetes Controller to 🔄 reload pods automatically if configmaps are changed/ updated.
 
 - [k8s-reload](#k8s-reload)
   - [Quickstart](#quickstart)
