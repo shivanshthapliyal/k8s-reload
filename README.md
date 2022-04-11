@@ -3,13 +3,13 @@ Custom Kubernetes Controller to reload pods automatically if configmaps are chan
 
 - [k8s-reload](#k8s-reload)
   - [Quickstart](#quickstart)
-    - [Instal contoller via helm chart:](#instal-contoller-via-helm-chart)
+    - [Install contoller via helm chart:](#install-contoller-via-helm-chart)
     - [Build k8s-reload controller image:](#build-k8s-reload-controller-image)
     - [Run a demo application to test controller's functionality:](#run-a-demo-application-to-test-controllers-functionality)
   - [Usecases](#usecases)
 ## Quickstart
 
-### Instal contoller via helm chart:
+### Install contoller via helm chart:
 
     ## Clone the repository.
     git clone https://github.com/shivanshthapliyal/k8s-reload.git
